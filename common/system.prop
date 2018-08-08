@@ -1,7 +1,17 @@
 # This file will be read by resetprop
 # Example: Change dpi
 # ro.sf.lcd_density=320
+ro.product.model=Mi A1
+ro.product.brand=xiaomi
+ro.product.name=tissot
+ro.product.device=tissot_sprout
+ro.product.manufacturer=Xiaomi
+ro.build.product=tissot
+
 persist.camera.HAL3.enabled=1
 persist.camera.eis.enable=1
 camera.hal1.packagelist=com.whatsapp
 vendor.camera.aux.packagelist=com.android.camera,org.lineageos.snap,com.google.android.GoogleCamera,com.google.android.GoogleCameraTele,com.google.android.GoogleCameraWide,com.google.android.GoogleCamerb
+
+dalvik.vm.isa.arm64.variant=cortex-a53
+dalvik.vm.isa.arm.variant=cortex-a53
