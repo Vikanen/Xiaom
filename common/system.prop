@@ -1,0 +1,7 @@
+# This file will be read by resetprop
+# Example: Change dpi
+# ro.sf.lcd_density=320
+persist.camera.HAL3.enabled=1
+persist.camera.eis.enable=1
+camera.hal1.packagelist=com.whatsapp
+vendor.camera.aux.packagelist=com.android.camera,org.lineageos.snap,com.google.android.GoogleCamera,com.google.android.GoogleCameraTele,com.google.android.GoogleCameraWide,com.google.android.GoogleCamerb

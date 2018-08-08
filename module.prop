@@ -1,0 +1,8 @@
+id=TissotPieMiA2Cam
+name=Mi A1 Pie GSI Camera Fix + Mi A2 Cam
+version=v1
+versionCode=1
+author=Joey Huab, kdrag0n
+description=Installs Mi A2's Camera app as well as fixes the GCam Settings FC. This enables telephoto lens and Zoom in Google Camera as well.
+donate=https://paypal.me/joeyhuab
+minMagisk=1500
