@@ -2,20 +2,15 @@
 Magisk flashable of Xiaomi Mi A2's Camera app for all custom ROMs/GSIs.
 
 ## Compatibility
-- Tested working on Mi A1 Pie GSI.
-
-## Bugs
-- The module uses Tissot props which in turn disables AR Stickers and Tips & support in Settings app.
-- Front portrait doesn't blur the background.
-- 2x zoom missing from Main photo tab.
-- Some filter issues.
+Tested working on Mi A1 Pie GSI.
 
 ## Changelog
 # v3
-- Further improve tissot_sprout.xml
+- Adding AI feature
+- Fixes other functions
 
 # v2
-- Adds front portrait functionality
+- Fixes to front portrait
 - Include tissot props for further compatibility
 
 # v1

@@ -182,10 +182,14 @@
     <bool name="support_camera_tilt_shift">true</bool>
     <!--whether support magic mirror in camera-->
     <bool name="support_camera_magic_mirror">true</bool>
+    <!-- whether this device is Android one -->
+    <bool name="is_android_one_device">true</bool>
     <!--whether support groupshot mode  in camera-->
     <bool name="support_camera_groupshot">true</bool>
     <!--whether support snap with screen off  in camera-->
     <bool name="support_camera_quick_snap">true</bool>
+    <!-- whether the device app permission detail show in provision-->
+    <bool name="support_provision_app_permission">true</bool>
     <!--whether compass support tilt rotate calibrate  -->
     <bool name="support_rotate_calibrate">true</bool>
     <!-- whether support double tap to wake up device -->
@@ -194,8 +198,6 @@
     <bool name="support_edge_handgrip">false</bool>
     <!--wheater support validate device when syste upadte -->
     <bool name="support_ota_validate">true</bool>
-    <!--whether show my device-->
-    <bool name="support_my_device">true</bool>
     <!--battery capacity typ of the device-->
     <string name="battery_capacity_typ">3080</string>
     <!--whether show basic info items-->
@@ -271,6 +273,8 @@
     <bool name="boost_gpu">true</bool>
     <bool name="support_audio_loopback">true</bool>
     <bool name="support_new_silentmode">true</bool>
+    <!--whether show my device-->
+    <bool name="support_my_device">true</bool>
     <!-- whether CN hardware can flash Global rom -->
     <bool name="enable_flash_global">true</bool>
     <!--whether support tele asd night in camera-->
@@ -279,4 +283,43 @@
     <bool name="is_support_optical_zoom">true</bool>
     <!--whether support portrait in camera-->
     <bool name="is_support_portrait">true</bool>
+    <!--whether camera support portrait mode switch -->
+    <bool name="camera_is_support_portrait_switch">true</bool>
+    <!-- whether camera support AI lens entry -->
+    <bool name="camera_support_ai_lens">true</bool>
+    <!--whether taking legacy face beauty in camera-->
+    <bool name="is_legacy_face_beauty">false</bool>
+    <!--whether front camera support hdr or not-->
+    <bool name="support_front_hdr">true</bool>
+    <!-- Camera HDR default value -->
+    <integer name="support_camera_hdr_default_value">3</integer>
+    <integer name="support_camera_front_hdr_default_value">3</integer>
+　　<!--whether front camera support hht or not-->
+    <bool name="support_front_hht">true</bool>
+    <!--whether front camera support bokeh or not-->
+　  <bool name="support_front_bokeh">true</bool>
+    <!--whether support auto mirror in camera-->
+    <bool name="support_auto_mirror">false</bool>
+    <!--whether support auto mirror in camera-->
+    <bool name="enhance_beauty_with_hht">true</bool>
+    <!--whether support add watermark on bottom left of picture-->
+    <bool name="support_picture_watermark">true</bool>
+    <!--whether need video stabilizatiion crop-->
+    <bool name="disable_video_stabilization_in_speed_slow_mode">true</bool>
+    <!--whether add algorithm in file name or not-->
+    <bool name="enable_algorithm_in_file_suffix">false</bool>
+    <!--whether need video stabilizatiion crop-->
+    <bool name="need_video_stabilization_crop">true</bool>
+    <!--whether sensor_has_latency-->
+    <bool name="sensor_has_latency">true</bool>
+    <!-- whether camera supports paralell process -->
+    <bool name="support_parallel_process">true</bool>
+    <!--whether enable face detection in video and funmode or not-->
+    <bool name="support_camera_video_face_detection">true</bool>
+    <!--camera max quality which support high frame rate,1:480 2:720 3:1080-->
+    <integer name="support_camera_hfr_max_quality">2</integer>
+   <!--whether taking 18x9 ratio screen in camera-->
+   <bool name="is_18x9_ratio_screen">true</bool>
+   <bool name="camera_support_ai_lens">true</bool>
+   <bool name="camera_supported_ai_scene">true</bool>		 
 </features>
