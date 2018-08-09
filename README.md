@@ -3,6 +3,13 @@ Magisk flashable of Xiaomi Mi A2's Camera app for all custom ROMs/GSIs.
 
 ## Compatibility
 Tested working on Mi A1 Pie GSI.
+Tested on Mi A1 8.1 ROMs.
+
+## Bugs
+- Front portraits (doesn't blur BG)
+- Switching between modes causes FC
+- AI unable to recognize scenes
+- FP shutter not working
 
 ## Changelog
 ### STOCK/CUSTOM ROM VERSION (INSTALL VIA MAGISK MANAGER)
@@ -20,9 +27,3 @@ Tested working on Mi A1 Pie GSI.
 
 # v1
 - Initial release
-
-## Bugs
-- Front portraits (doesn't blur BG)
-- Switching between modes causes FC
-- AI unable to recognize scenes
-- FP shutter not working
