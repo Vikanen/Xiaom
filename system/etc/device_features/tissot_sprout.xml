@@ -38,10 +38,6 @@
     <bool name="support_screen_paper_mode">true</bool>
     <!--whether the device supports screen key position swap-->
     <bool name="support_screen_key_swap">false</bool>
-    <!--whether the device supports led light-->
-    <bool name="support_led_light">true</bool>
-    <!--whether the device supports colorful led light-->
-    <bool name="support_led_color">false</bool>
     <!--whether the device supports button light-->
     <bool name="support_button_light">true</bool>
     <!--whether the device supports emulated storage-->
@@ -78,6 +74,8 @@
     <bool name="support_screen_optimize">true</bool>
     <!--whether the device supports agps-->
     <bool name="support_agps">true</bool>
+    <!-- support nfc -->
+    <bool name="support_nfc">false</bool>
     <!--whether the device supports feedback level-->
     <bool name="support_feedback_level">true</bool>
     <!--whether the device supports miui lite-->
@@ -158,6 +156,7 @@
     <bool name="support_camera_manual_function">true</bool>
     <!--whether capture when user press down the shutter in camera instead of left the shutter-->
     <bool name="support_camera_press_down_capture">true</bool>
+    <bool name="front_fingerprint_sensor">false</bool>
     <!--whether support capture in torch mode in camera-->
     <bool name="support_camera_torch_capture">false</bool>
     <!--whether freeze preview after hdr capture in camera-->
@@ -186,22 +185,20 @@
     <bool name="is_android_one_device">true</bool>
     <!--whether support groupshot mode  in camera-->
     <bool name="support_camera_groupshot">true</bool>
+    <!--whether rotate the final image in camera isp-->
+    <bool name="is_camera_isp_rotated">false</bool>
     <!--whether support snap with screen off  in camera-->
     <bool name="support_camera_quick_snap">true</bool>
     <!-- whether the device app permission detail show in provision-->
     <bool name="support_provision_app_permission">true</bool>
+    <!--whether support pre-installed application-->
+    <bool name="support_pre_installed_application">true</bool>
     <!--whether compass support tilt rotate calibrate  -->
     <bool name="support_rotate_calibrate">true</bool>
-    <!-- whether support double tap to wake up device -->
-    <bool name="support_gesture_wakeup">true</bool>
     <!-- whether support edge handgrip -->
     <bool name="support_edge_handgrip">false</bool>
     <!--wheater support validate device when syste upadte -->
     <bool name="support_ota_validate">true</bool>
-    <!--battery capacity typ of the device-->
-    <string name="battery_capacity_typ">3080</string>
-    <!--whether show basic info items-->
-    <bool name="support_show_basic_items">true</bool>
     <!--wheater support show credentials-->
     <bool name="support_credentials">true</bool>
     <!--the vendor feature, it's value may be qcom,mediatek,leadcore or nvidia-->
@@ -216,27 +213,25 @@
     <integer name="camera_reduce_preview_flag">14</integer>
     <!--max number of burst images one time -->
     <integer name="burst_shoot_count">100</integer>
-    <!--whether rotate the final image in camera isp-->
-    <bool name="is_camera_isp_rotated">false</bool>
+    <!--support front flash or not-->
+    <bool name="support_front_flash">false</bool>
+    <!--b0:flash b1:hdr b2:motion b3:night-->
+    <integer name="camera_supported_asd">8</integer>
+    <!-- front hht enhance-->
+    <bool name="support_front_hht_enhance">true</bool>
     <!--max cpu freq of the device-->
     <integer name="cpu_max_freq">215</integer>
     <!--Successful flag of camera continuous auto focus  result-->
     <integer name="camera_focus_success_flag">2</integer>
-    <!--b0:flash b1:hdr b2:motion b3:night-->
-    <integer name="camera_supported_asd">8</integer>
     <!--total steps number of camera compensation-->
     <float name="camera_exposure_compensation_steps_num">12.0</float>
     <!--Left margin of count down parent layout for front camera-->
     <float name="camera_front_count_down_margin">-0.3460</float>
-    <bool name="front_fingerprint_sensor">false</bool>
-    <!--whether the device supports smart cover with small window-->
-    <bool name="support_small_win_cover">true</bool>
-    <!--0: x7 type; 1: A1 type -->
-    <integer name="small_win_cover_type">0</integer>
-    <integer name="smartcover_smallwindow_left">43</integer>
-    <integer name="smartcover_smallwindow_top">126</integer>
-    <integer name="smartcover_smallwindow_right">1032</integer>
-    <integer name="smartcover_smallwindow_bottom">1099</integer>
+    <!--camera continuous shot callback class name-->
+    <string name="camera_continuous_shot_callback_class">ContinuousShotCallback</string>
+    <!--camera continuous shot callback setter method name-->
+    <string name="camera_continuous_shot_callback_setter">setContinuousShotCallback</string>
+    <bool name="fingerprint_wakeup_device">true</bool>
     <!-- fingerprint navigation event name list -->
     <string-array name="fp_nav_event_name_list">
         <item>fpc_irq_wakeup</item>
@@ -248,6 +243,12 @@
     <bool name="support_tap_fingerprint_sensor_to_home">false</bool>
     <!-- type of soter finger pay, config by owner of soter -->
     <integer name="type_soter_finger_pay">2</integer>
+    <!-- whether support double tap to wake up device -->
+    <bool name="support_gesture_wakeup">true</bool>
+    <!--Led light features-->
+    <bool name="support_led_light">true</bool>
+    <bool name="support_led_color">false</bool>
+    <bool name="support_audio_loopback">true</bool>
     <!--NFC related-->
     <bool name="support_se_route">true</bool>
     <!--wheater the device supports persist screen color in driver-->
@@ -258,26 +259,23 @@
     <integer name="case_therm">3</integer>
     <!--whether the middle keycode is KEYCODE_DPAD_CENTER-->
     <bool name="middle_keycode_is_dpad_center">false</bool>
-    <!--support nfc search -->
-    <bool name="support_nfc">false</bool>
     <!--In these app access camera, add beautify parameter -->
     <string-array name="add_still_beautify_list">
         <item>com.tencent.mm</item>
         <item>com.tencent.mobileqq</item>
         <item>com.skype.rover</item>
     </string-array>
-    <!--still beautify value for 3rd party call-->
-    <string name="extra_still_beautify_value">i:2</string>
-    <!--min previewsize value for video call case-->
-    <integer name="extra_min_preview_size">921600</integer>
-    <!-- boost gpu freq to make up sampling latency, used on msm8953 only -->
-    <bool name="boost_gpu">true</bool>
-    <bool name="support_audio_loopback">true</bool>
-    <bool name="support_new_silentmode">true</bool>
     <!--whether show my device-->
     <bool name="support_my_device">true</bool>
+    <!--whether round corner-->
+    <bool name="support_round_corner">true</bool>
+    <!--battery capacity typ of the device-->
+    <string name="battery_capacity_typ">3080</string>							 
+    <!--whether show basic info items-->
+    <bool name="support_show_basic_items">true</bool>
     <!-- whether CN hardware can flash Global rom -->
     <bool name="enable_flash_global">true</bool>
+    <bool name="support_new_silentmode">true</bool>
     <!--whether support tele asd night in camera-->
     <bool name="is_support_tele_asd_night">true</bool>
     <!-- Support Sign Verify In Cust Partition-->
@@ -323,5 +321,19 @@
     <bool name="support_camera_video_face_detection">true</bool>
     <!--camera max quality which support high frame rate,1:480 2:720 3:1080-->
     <integer name="support_camera_hfr_max_quality">2</integer>
-   <bool name="camera_supported_ai_scene">true</bool>		 
+    <bool name="camera_supported_ai_scene">true</bool>
+    <!--still beautify value for 3rd party call-->
+    <string name="extra_still_beautify_value">i:2</string>
+    <!--min previewsize value for video call case-->
+    <integer name="extra_min_preview_size">921600</integer>
+    <!-- boost gpu freq to make up sampling latency, used on msm8953 only -->
+    <bool name="boost_gpu">true</bool>
+    <!--whether the device supports smart cover with small window-->
+    <bool name="support_small_win_cover">true</bool>
+    <!--0: x7 type; 1: A1 type -->
+    <integer name="small_win_cover_type">0</integer>
+    <integer name="smartcover_smallwindow_left">43</integer>
+    <integer name="smartcover_smallwindow_top">126</integer>
+    <integer name="smartcover_smallwindow_right">1032</integer>
+    <integer name="smartcover_smallwindow_bottom">1099</integer>
 </features>
