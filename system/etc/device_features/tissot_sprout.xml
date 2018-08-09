@@ -239,7 +239,10 @@
     <integer name="smartcover_smallwindow_bottom">1099</integer>
     <!-- fingerprint navigation event name list -->
     <string-array name="fp_nav_event_name_list">
+        <item>fpc_irq_wakeup</item>
+        <item>fp-keys</item>
         <item>uinput-fpc</item>
+        <item>uinput-goodix</item>
         <item>gf3208</item>
     </string-array>
     <bool name="support_tap_fingerprint_sensor_to_home">false</bool>
@@ -267,8 +270,6 @@
     <string name="extra_still_beautify_value">i:2</string>
     <!--min previewsize value for video call case-->
     <integer name="extra_min_preview_size">921600</integer>
-    <!-- Support Sign Verify In Cust Partition-->
-    <bool name="support_sign_verify_in_cust">false</bool>
     <!-- boost gpu freq to make up sampling latency, used on msm8953 only -->
     <bool name="boost_gpu">true</bool>
     <bool name="support_audio_loopback">true</bool>
@@ -279,6 +280,10 @@
     <bool name="enable_flash_global">true</bool>
     <!--whether support tele asd night in camera-->
     <bool name="is_support_tele_asd_night">true</bool>
+    <!-- Support Sign Verify In Cust Partition-->
+    <bool name="support_sign_verify_in_cust">false</bool>
+    <!--whether taking 18x9 ratio screen in camera-->
+    <bool name="is_18x9_ratio_screen">true</bool>
     <!--whether support optical zoom in camera-->
     <bool name="is_support_optical_zoom">true</bool>
     <!--whether support portrait in camera-->
@@ -318,8 +323,5 @@
     <bool name="support_camera_video_face_detection">true</bool>
     <!--camera max quality which support high frame rate,1:480 2:720 3:1080-->
     <integer name="support_camera_hfr_max_quality">2</integer>
-   <!--whether taking 18x9 ratio screen in camera-->
-   <bool name="is_18x9_ratio_screen">true</bool>
-   <bool name="camera_support_ai_lens">true</bool>
    <bool name="camera_supported_ai_scene">true</bool>		 
 </features>
