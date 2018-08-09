@@ -25,3 +25,4 @@ Tested working on Mi A1 Pie GSI.
 - Front portraits (doesn't blur BG)
 - Switching between modes causes FC
 - AI unable to recognize scenes
+- FP shutter not working
