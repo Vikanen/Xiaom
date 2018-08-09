@@ -6,13 +6,13 @@ Tested working on Mi A1 Pie GSI.
 
 ## Changelog
 # v3
-- Adding AI feature
-- Fixes other functions
+- Added AI feature
+- Fixed other functions
 
 # v2
-- Fixes to front portrait
-- Include tissot props for further compatibility
+- Fixes to front portrait (still doesn't blur background)
+- Include tissot_sprout props for further compatibility
 
 # v1
-- Initial Release
+- Initial release
 
