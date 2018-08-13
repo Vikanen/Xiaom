@@ -1,7 +1,7 @@
 id=TissotPieMiA2Cam
-name=Mi A1 Pie GSI Mi A2 Camera + GCam Fix
-version=v3
-versionCode=3
+name=Mi A2 Camera + GCam Fix for Android Pie semi-GSI
+version=v4
+versionCode=4
 author=Joey Huab, kdrag0n
 description=IF YOU GET '60' ERROR, INSTALL VIA TWRP!!! Installs Mi A2's Camera app as well as fixes the GCam Settings FC. This enables telephoto lens and Zoom in Google Camera as well.
 donate=https://paypal.me/joeyhuab
