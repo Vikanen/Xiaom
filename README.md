@@ -12,6 +12,9 @@ Tested working on Mi A1 Pie GSI.
 
 ## Changelog
 ### PIE SPECIFIC VERSION (INSTALL VIA TWRP)
+# v5
+- Camera optimizations for Mi A1
+
 # v4
 - Removed Mi A1 Prop (not needed anymore)
 - Made it compatible for all devices on Pie GSI
