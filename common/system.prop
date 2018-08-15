@@ -1,12 +1,15 @@
 # This file will be read by resetprop
 # Example: Change dpi
 # ro.sf.lcd_density=320
-ro.product.device=marlin
+mm.enable.qcom_parser=3183219
 persist.camera.HAL3.enabled=1
 persist.camera.eis.enable=1
 persist.camera.is_type=5
 persist.camera.is_mode=5
-mm.enable.qcom_parser=3183219
 ro.vendor.audio.sdk.fluencetype=fluencepro
 camera.hal1.packagelist=com.whatsapp
-vendor.camera.aux.packagelist=com.android.camera,org.lineageos.snap,com.google.android.GoogleCamera,com.google.android.GoogleCameraTele,com.google.android.GoogleCameraWide,com.google.android.GoogleCamerb
+camera.hal3.packagelist=com.google.android.GoogleCamera,com.google.android.GCMods5
+vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,org.lineageos.snap,com.google.android.GoogleCamera,com.google.android.GoogleCameraTele,com.google.android.GoogleCameraWide,com.google.android.GoogleCamerb
+
+dalvik.vm.isa.arm64.variant=cortex-a53
+dalvik.vm.isa.arm.variant=cortex-a53
